@@ -1,0 +1,236 @@
+body{
+    color: rgba(26,26,26, .8);
+    font-family: "Inconsolata", Arial;
+    font-size: 16px;
+    margin: 0;
+    background-color: rgba(255, 248, 220);
+}
+
+@media (max-width: 500px) {
+    body {
+      font-size: 12px;
+    }
+  }
+  /* Header */
+header{
+    color: whitesmoke;
+    background-image: url(nes.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+    /* font size 32px*/
+    font-size: 2em;
+    z-index: 1;
+}
+
+#menu{
+    display: none;
+}
+
+#menu div{
+    width: 20px;
+    height: 4px;
+    margin: 4px 0;
+    border-radius: 10px;
+    background-color: whitesmoke;    
+}
+
+header h1{
+    text-align: center;
+    z-index: 1;
+}
+
+h1 p{
+    font-size: 2em;
+}
+
+h1 strong{
+    position: relative;
+    bottom: 15px;
+}
+
+#overlay{
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+}
+
+@media(max-width: 500px){
+    header{
+        height: 600px;
+    }
+    #navigazione{
+        display: none;
+    }
+    #menu{
+        display:block;
+    }    
+}
+
+    /*sezione e elementi della lista */
+.List-position{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.List-position .text{
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-right: 3%;
+    width: 40%;
+    line-height: 20px;
+}
+
+.text em{
+    font-size: 2em;
+    font-weight: bold;
+    color:crimson;
+}
+
+.text h1{
+    font-size: 1.25em;
+    color:rgba(26,26,26, .8);
+}
+
+.List-position img{
+    height: 100%;
+    width: 40%;
+}
+
+@media(max-width: 500px){
+    .List-position{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 50vh;
+        background-color: rgba(255, 248, 220, 0.425);
+        text-align: center;   
+    }
+    .List-position .text{
+        width: 90%;
+        height: 50%;
+        margin-right: 5%;
+        margin-left: 5%;
+        line-height: 12px;
+    }
+    .List-position img{
+        height: 50%;
+        width: auto;
+    }
+    #right-text .text{
+        position: relative;
+        bottom: 50%
+    }
+    #right-text img{
+        position: relative;
+        top: 50%;
+    }
+    .text h1{
+        font-size: 0.80em;
+    }
+}
+
+    /*footer*/
+footer{
+    background-color: rgb(73, 84, 95);
+    color: whitesmoke;
+    text-align: center;
+    padding: 80px;
+    margin-top: 50px;
+}
+
+footer addresses{
+    font-size: 1.5em;
+}
+
+footer p{
+    color:rgba(245, 245, 245, 0.5);
+    font-size: 0.75em;
+}
+    /*bottoni e link*/
+.button{
+    padding: 8px 12px;
+    border: 2px solid whitesmoke;
+    border-radius: 100px;
+}
+
+.button:hover{
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+}
+
+
+a{
+    margin: 15px;
+    cursor: pointer;
+}
+
+h1 p,
+.text em,
+footer p{
+    font-family: "Roboto Slab", 'Times New Roman';
+} 
+/* Relativi al minihomework 3*/
+.hidden{
+    display: none;
+}
+
+.screen-container{
+    display: flex;
+    justify-content: center;
+}
+
+.screenshots{
+    display: flex;
+    justify-content: space-between;
+}
+
+.screenshots img{
+    padding: 20px;
+    width: 200px;
+    height: 180px;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    background-color: whitesmoke;
+    color:rgba(26,26,26, .8);
+    border-radius: 100px;
+    margin: 50px
+}
+
+iframe{
+    position: relative;
+    left: 5%;
+    margin-bottom: 20px;
+}
+
+#playMusic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
